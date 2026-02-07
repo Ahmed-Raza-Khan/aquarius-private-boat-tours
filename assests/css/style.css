@@ -413,3 +413,157 @@
         border-right: 1px solid var(--white-color) !important;
     }
 }
+
+/* hero section 2 - AQUARIUS BOAT RENTALS */
+.hero-section {
+    background-color: var(--background-color-dark-blue);
+    min-height: 100vh;
+    padding: 80px 0;
+}
+
+.serif-font {
+    font-family: var(--font-serif);
+}
+
+.z-index-2 {
+    position: relative;
+    z-index: 2;
+}
+
+.z-index-3 {
+    position: relative;
+    z-index: 2;
+    margin-left: 15%;
+}
+
+.small-tag-aquarius {
+    font-size: 14px;
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    letter-spacing: 2.06px;
+    line-height: 160%;
+    padding: 5px 15px;
+    border-radius: 0px;
+    gap: 10px;
+    background-color: var(--gray-color-opacity-20);
+}
+
+.main-heading-aquarius{
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    color: var(--white-color);
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 1.06px;
+    text-transform: capitalize;
+    width: 570px;
+}
+
+.main-big-description-aquarius {
+    font-family: var(--font-jost);
+    font-weight: var(--font-weight-500);
+    font-style: var(--font-medium);
+    color: var(--white-color);
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+
+.small-description-aquarius {
+    font-family: var(--font-jost);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    color: var(--white-color);
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    width: 440px;
+}
+
+.custom-btn-aquarius {
+    background-color: var(--orange-color) !important;
+    color: var(--white-color);
+    border: 1px solid var(--white-color) !important;
+    border-radius: 0;
+    font-family: var(--font-jost);
+    font-weight: var(--font-weight-700);
+    font-style: var(--font-bold);
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.custom-btn-aquarius:hover {
+    background-color: var(--gray-color-opacity-20) !important;
+    transform: translateY(-2px);
+}
+
+.boat-container-aquarius {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.boat-img-aquarius {
+    min-height: 700px;
+}
+
+.video-thumbnail-aquarius {
+    opacity: 80%;
+    border: 1px solid var(--white-color);
+}
+
+.play-button-overlay-aquarius {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.img-aquarius-video-icon-all {
+    width: 76px;
+    height: 76px;
+}
+
+.aquarius-video-big-heading {
+    color: var(--white-color);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1.51px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.aquarius-video-small-heading {
+    color: var(--white-color);
+    font-family: var(--font-dm-sand);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 10.26px;
+    line-height: 15.39px;
+    letter-spacing: 0%;
+    width: 160px;
+}
+
+.icon-style-aquarius {
+    color: white;
+}
+
+.small-text-aquarius {
+    font-size: 0.75rem;
+    color: #cbd5e0;
+}
