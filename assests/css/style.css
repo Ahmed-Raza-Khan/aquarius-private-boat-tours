@@ -10,6 +10,7 @@
  --font-heebo: 'Heebo';
  --font-inter: 'Inter';
  --font-outfit: 'Outfit';
+ --font-times-new-roman: 'Times New Roman';
  --font-regular: 'Regular';
  --font-bold: 'Bold';
  --font-medium: 'Medium';
@@ -687,4 +688,270 @@
         height: 50px;
         margin-bottom: 1px;
     }
+}
+
+
+/* Miami Boat Rental Options section */
+.miami-boat-rental-section {
+    background: 
+        linear-gradient(90.06deg, rgba(0, 22, 38, 0.1), #001626), 
+                url('../images/miami-boat-rental-option-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.miami-boat-rental-section-title {
+    color: var(--white-color);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 2.06px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.miami-boat-rental-boat-card {
+    background-color: var(--background-color-blue);
+    border: 1px solid var(--white-color);
+    transition: transform 0.3s ease;
+}
+
+.miami-boat-rental-boat-card:hover {
+    transform: translateY(-20px);
+}
+
+.miami-boat-rental-img-box img {
+    width: 100%;
+    height: 270px;
+    background-size: cover;
+}
+
+.miami-boat-rental-card-title {
+    color: var(--gray-color-light);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 28px;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+}
+
+.miami-boat-rental-card-list li {
+    color: var(--gray-color-light);
+    font-family: var(--font-josefin-sans);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    margin-bottom: 10px;
+}
+
+.miami-boat-rental-price-text {
+    color: var(--gray-color-light);
+    font-family: var(--font-josefin-sans);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+
+.miami-boat-rental-price-text-dollar {
+    color: var(--gray-color-light);
+    font-family: var(--font-josefin-sans);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+
+.miami-boat-rental-book-btn {
+    border-radius: 0;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    font-family: var(--font-jost);
+    font-weight: var(--font-weight-500);
+    font-style: var(--font-medium);
+    font-size: 14px;
+    line-height: 33px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 10px;
+    width: 170PX;
+}
+
+.miami-boat-rental-boat-card:hover .miami-boat-rental-card-title,
+.miami-boat-rental-boat-card:hover .miami-boat-rental-card-list li,
+.miami-boat-rental-boat-card:hover .miami-boat-rental-price-text,
+.miami-boat-rental-boat-card:hover .miami-boat-rental-price-text-dollar {
+    color: var(--white-color);
+}
+
+.miami-boat-rental-boat-card:hover .miami-boat-rental-book-btn {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    border: 0;
+}
+
+.btn-outline-light{
+    border: 1.2px solid var(--white-color);
+    color: var(--white-color);
+    font-family: var(--font-jost);
+    font-weight: var(--font-weight-700);
+    font-style: var(--font-bold);
+    font-size: 17px;
+    line-height: 17px;
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
+    border-radius: 0;
+    height: 60px;
+}
+
+.btn-outline-light:hover {
+    color: var(--white-color);
+    background-color: var(--background-color-blue);
+}
+
+.rent-a-boat-in-miami-with-aquarius-image-grid img{
+    margin-right: 15px
+}
+
+.rent-a-boat-in-miami-with-aquarius-section-title{
+    color: var(--white-color);
+    font-family: var(--font-playfair-display);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 54px;
+    line-height: 109.1%;
+    letter-spacing: 9%;
+    text-transform: capitalize;
+    width: 700px;
+}
+
+.rent-a-boat-in-miami-with-aquarius-steps-container {
+    position: relative;
+}
+
+.rent-a-boat-in-miami-with-aquarius-step-item {
+    position: relative;
+    z-index: 1;
+}
+
+.rent-a-boat-in-miami-with-aquarius-hexo-headings{
+    color: var(--white-color);
+    font-family: var(--font-jost);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 20px;
+    line-height: 30.88px;
+    letter-spacing: 0%;
+    width: 445px;
+    margin-bottom: 30px;
+}
+
+.bubble {
+    width: 70px;
+    height: 70px;
+    background: url(../images/circle-timeline-step.svg);
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-family: var(--font-times-new-roman);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 36.2px;
+    line-height: 28px;
+    letter-spacing: 2%;
+    flex-shrink: 0;
+}
+
+.vertical-dashed-line-all-aquarius{
+    width: 2px;
+    height: 100px;
+    margin-top: 90px;
+    transform: translateX(-60px);
+}
+
+.bubble-heading-all-h5{
+    color: var(--white-color);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 2%;
+    margin-bottom: 20px;
+    width: 327px;
+}
+
+.bubble-paragraph-all-p{
+    color: var(--white-color);
+    font-family: var(--font-josefin-sans);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+}
+
+.rent-a-boat-in-miami-with-aquarius-tour-box {
+    background: var(--gray-color-opacity-10);
+    border: 1px solid var(--white-color);
+    width: 688px;
+}
+
+.rent-a-boat-in-miami-with-aquarius-under-heading{
+    color: var(--white-color);
+    font-family: var(--font-playfair-display);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 42px;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+.rent-a-boat-in-miami-with-aquarius-para{
+    color: var(--white-color);
+    font-family: var(--font-josefin-sans);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 19px;
+    line-height: 29px;
+    letter-spacing: 0%;
+}
+
+.rent-a-boat-in-miami-with-aquarius-button-halfing{
+    width: 485px;
+    height: 55px;
+    border: 1.1px solid var(--white-color);
+    border-radius: 0;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    font-family: var(--font-jost);
+    font-weight: var(--font-weight-700);
+    font-style: var(--font-bold);
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.77px;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 10px;
+}
+
+.rent-a-boat-in-miami-with-aquarius-button-halfing:hover {
+    background-color: var(--background-color-blue);
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.rent-a-boat-in-miami-with-aquarius-button-halfing img{
+    margin-left: 10px;
 }
