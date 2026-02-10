@@ -1146,66 +1146,174 @@
 
 .giant-comfort-content-box {
     border: 1px solid var(--white-color);
-    background-color: var(--background-color-blue); /* Deep navy with transparency */
+    background-color: var(--background-color-blue);
     padding: 50px;
     color: white;
 }
 
 .giant-comfort-small-badge {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    display: inline-block;
+    background-color: var(--gray-color-opacity-20);
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    width: 380px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     padding: 5px 15px;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 2.06px;
+    text-transform: capitalize;
     margin-bottom: 20px;
 }
 
 .giant-comfort-main-heading {
-    font-family: 'Serif', serif;
-    font-size: 2.8rem;
-    line-height: 1.2;
+    color: var(--white-color);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
     margin-bottom: 25px;
 }
 
-.giant-comfort-description {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #d1d1d1;
-    margin-bottom: 30px;
+.giant-comfort-main-heading-mobile{
+    display: none;
 }
 
-/* .giant-comfort-para-1 {
-
-} */
-
-/* .giant-comfort-para-2 {
-
-} */
+.giant-comfort-description {
+    color: var(--white-color);
+    font-family: var(--font-dm-sand);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    margin-bottom: 30px;
+    width: 435px;
+}
 
 .giant-comfort-book-btn {
-    background-color: #ff7e5f; /* Coral color */
-    color: white;
-    border: none;
+    width: 375px;
+    height: 50px;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
     padding: 12px 30px;
-    font-weight: bold;
+    font-family: var(--font-jost);
+    font-style: var(--font-bold);
+    font-weight: var(--font-weight-700);
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.7px;
     text-transform: uppercase;
-    font-size: 0.8rem;
     transition: 0.3s;
     text-decoration: none;
-    display: inline-flex;
+    /* display: inline-flex; */
     align-items: center;
+    justify-content: center;
 }
 
 .giant-comfort-book-btn:hover {
-    background-color: #e06d52;
-    color: white;
+    background-color: var(--orange-color);
+    color: var(--white-color);
 }
 
 .giant-comfort-gallery-img {
     width: 100%;
-    height: 180px;
+    height: 190px;
     object-fit: cover;
-    border-radius: 2px;
+    border-radius: 5px;
+}
+
+@media (max-width: 425px) {
+    .giant-comfort-section {
+        background: linear-gradient(0.06deg, rgba(0, 22, 38, 0.6), #001626), 
+                url('../images/giant-compfort-boat-background.png') no-repeat bottom/cover;
+    }
+
+    .giant-comfort-content-box {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .giant-comfort-small-badge {
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto 20px auto;
+        border: 0.83px solid var(--white-color);
+        color: var(--white-color);
+        padding: 3.33px 8.33px 3.33px 8.33px;
+        gap: 8.33px;
+        font-family: var(--font-marcellus);
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        font-size: 11.67px;
+        line-height: 160%;
+        letter-spacing: 1.71px;
+        text-transform: capitalize;
+    }
+
+    .giant-comfort-main-heading {
+        display: none;
+    }
+
+    .giant-comfort-main-heading-mobile{
+        display: flex;
+        color: var(--white-color);
+        font-family: var(--font-playfair-display);
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        font-size: 35px;
+        line-height: 42px;
+        letter-spacing: 0%;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .giant-comfort-description {
+        width: 100%;
+        color: var(--white-color);
+        font-family: var(--font-dm-sand);
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    .giant-comfort-book-btn {
+        width: 100%;
+        color: var(--white-color);
+        background-color: var(--orange-color);
+        font-family: var(--font-jost);
+        font-weight: var(--font-weight-700);
+        font-style: var(--font-bold);
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.59%;
+        text-transform: uppercase;
+        display: flex;
+        padding: 15px 10px;
+        margin-bottom: 30px;
+    }
+
+    .giant-comfort-gallery-img {
+        height: 140px;
+        width: 155px;
+        border-radius: 2.54px;
+    }
+
+    .g-5 {
+        --bs-gutter-y: 2rem;
+    }
 }
