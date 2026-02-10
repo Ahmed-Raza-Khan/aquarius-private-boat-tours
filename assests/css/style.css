@@ -1317,3 +1317,194 @@
         --bs-gutter-y: 2rem;
     }
 }
+
+
+/* squarius island tours section */
+.squarius-island-tour-section {
+    background-color: var(--background-color-dark-blue);
+}
+
+.squarius-island-tour-badge {
+    border: 1px solid var(--white-color);
+    padding: 5px 20px;
+    color: var(--white-color);
+    background-color: var(--gray-color-opacity-20);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 2.06px;
+    text-transform: capitalize;
+    margin-top: 40px;
+}
+
+.squarius-island-tour-main-heading {
+    color: var(--white-color);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 2.06px;
+    text-transform: capitalize;
+}
+
+.squarius-island-tour-top-desc {
+    color: var(--white-color);
+    font-family: var(--font-josefin-sans);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    max-width: 1300px;
+}
+
+.squarius-island-tour-img {
+    width: 410px;
+    height: 340px;
+    object-fit: cover;
+    transform: translateY(50px);
+    transition: 0.3s;
+}
+
+/* .squarius-island-tour-img:hover {
+    width: 410px;
+    height: 490px;
+    object-fit: cover;
+    background-position: 10%;
+    transform: translateY(-30px);
+} */
+
+.squarius-island-tour-card-title {
+    color: var(--white-color);
+    font-family: var(--font-outfit);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 23px;
+    line-height: 29px;
+    letter-spacing: -0.46%;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.squarius-island-arrow-icon {
+    width: 22px;
+    height: 25px;
+    margin-left: 170px;
+}
+
+.squarius-island-tour-card-desc {
+    color: var(--white-color);
+    font-family: var(--font-josefin-sans);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    width: 363px;
+}
+
+@media (max-width: 425px) {
+    .squarius-island-tour-section .row {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory;
+        gap: 15px;
+        padding: 60px 15px 40px 15px !important;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .squarius-island-tour-section .row::-webkit-scrollbar { 
+        display: none;
+    }
+
+    .squarius-island-tour-section .col-md-4 {
+        flex: 0 0 85% !important;
+        max-width: 85% !important;
+        scroll-snap-align: center;
+        transition: opacity 0.4s ease;
+        opacity: 0.5;
+        display: block !important;
+    }
+
+    .col-md-4.is-active {
+        opacity: 1;
+    }
+
+    .squarius-island-tour-section .col-md-4.is-active {
+        opacity: 1;
+    }
+
+    .squarius-island-tour-section .col-md-4.is-active .squarius-island-tour-img {
+        height: 480px !important;
+        transform: translateY(10px) !important;
+    }
+
+    .col-md-4.is-active .squarius-island-tour-img {
+        height: 480px;
+        transform: translateY(-20px);
+    }
+
+    .squarius-island-tour-badge {
+        color: var(--white-color);
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        font-family: var(--font-marcellus);
+        font-size: 11px;
+        line-height: 160%;
+        letter-spacing: 1.41px;
+        padding: 5px 10px;
+    }
+
+    .squarius-island-tour-main-heading {
+        color: var(--white-color);
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        font-family: var(--font-playfair-display);
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 0%;
+    }
+
+    .squarius-island-tour-top-desc {
+        color: var(--white-color);
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        font-family: var(--font-josefin-sans);
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0%;
+        width: 100% !important;
+    }
+
+    .squarius-island-tour-img {
+        width: 100% !important;
+        height: 300px !important;
+        object-fit: cover;
+        transition: all 0.4s ease-in-out !important;
+        transform: translateY(0);
+    }
+
+    .squarius-island-tour-card-title {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .squarius-island-arrow-icon {
+        margin-left: 0;
+    }
+
+    .squarius-island-tour-card-desc {
+        width: 100%;
+        font-size: 14px;
+    }
+}
