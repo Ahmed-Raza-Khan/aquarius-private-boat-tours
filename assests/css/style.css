@@ -1512,7 +1512,8 @@
 
 /* aquarius experience section */
 .aquarius-experience-section {
-    background: linear-gradient(90.06deg, rgba(0, 22, 38, 0.8), #001626), url('../images/aquarius-miami-boating-experiences-background.png');
+    background: linear-gradient(90.06deg, rgba(0, 22, 38, 0.8), #001626),
+                                url('../images/aquarius-miami-boating-experiences-background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1903,3 +1904,151 @@
         border-radius: 2.5px;
     }
 }
+
+
+/* testimonial client section */
+.testimonial-client-section {
+    background-image:linear-gradient(rgba(0, 22, 38, 0.6), #001626),
+                                    url('../images/whatclientaresayingbackground.png');
+    background-size: cover;
+    background-position-y: 88%;
+    min-height: 500px;
+}
+
+.testimonial-client-heading {
+    color: var(--white-color);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 45px;
+    line-height: 35px;
+    letter-spacing: 2.06px;
+    text-transform: capitalize;
+}
+
+.testimonial-client-arrow-btn {
+    background: transparent;
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+    transition: 0.3s;
+    opacity: 40%;
+}
+
+.testimonial-client-arrow-btn-left {
+    background: transparent;
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+    transition: 0.3s;
+    opacity: 40%;
+    transform: scaleX(-1);
+}
+
+.testimonial-client-arrow-btn:hover {
+    border: 1px solid var(--white-color);
+    opacity: 1;
+}
+
+.testimonial-client-arrow-btn-left:hover {
+    border: 1px solid var(--white-color);
+    opacity: 1;
+}
+
+.testimonial-client-testimonial-card {
+    border: 1px solid var(--white-color);
+    padding: 30px;
+    height: 100%;
+    background: transparent;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-client-testimonial-card h4 {
+    color: var(--white-color);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 25px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.testimonial-client-text-secondary {
+    color: var(--white-color);
+    font-family: var(--font-heebo);
+    font-weight: var(--font-weight-500);
+    font-style: var(--font-medium);
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0%;
+    margin-bottom: 5px;
+}
+
+.testimonial-client-card-divider {
+    border-top: 1px solid var(--white-color);
+    width: 150px;
+    margin: 20px 0;
+    opacity: 1;
+}
+
+.testimonial-client-review-text {
+    color: var(--white-color);
+    font-family: var(--font-josefin-sans);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+
+#testimonial-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.testimonial-client-testimonial-card {
+    min-width: 100%;
+}
+
+
+@media (max-width: 425px) {
+    .testimonial-client-heading {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .testimonial-client-testimonial-card {
+        padding: 20px;
+        margin: 0 10px;
+    }
+
+    .testimonial-client-nav-arrows {
+        width: 100%;
+        margin-top: 25px;
+    }
+}
+
+/* @media (min-width: 768px) {
+    .testimonial-client-testimonial-card {
+        min-width: auto;
+    }
+} */
+
+
+/* @media (max-width: 425px) {
+    .testimonial-section h2 { font-size: 28px; text-align: center; }
+    .nav-arrows { display: none; }
+} */
