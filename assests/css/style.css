@@ -1510,54 +1510,157 @@
 }
 
 
+/* aquarius experience section */
 .aquarius-experience-section {
-    background: linear-gradient(90.06deg, rgba(0, 22, 38, 0.9), #001626), url('../images/aquarius-miami-boating-experiences-background.png');
+    background: linear-gradient(90.06deg, rgba(0, 22, 38, 0.8), #001626), url('../images/aquarius-miami-boating-experiences-background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.small-badge {
+.aquarius-experience-small-badge {
     display: inline-block;
-    border: 1px solid rgba(255,255,255,0.3);
-    background: rgba(255,255,255,0.1);
+    border: 1px solid var(--white-color);
+    background: var(--gray-color-opacity-20);
     padding: 5px 15px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    color: var(--white-color);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-family: var(--font-marcellus);
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 1.06px;
+    text-transform: capitalize;
 }
 
-.main-heading { font-family: 'Marcellus', serif; font-size: 45px; }
+.aquarius-experience-main-heading {
+    color: var(--white-color);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-family: var(--font-marcellus);
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 2.06px;
+    text-transform: capitalize;
+}
 
-.section-desc { max-width: 900px; font-size: 15px; opacity: 0.8; }
+.aquarius-experience-section-desc {
+    max-width: 1340px;
+    color: var(--white-color);
+    font-family: var(--font-josefin-sans);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0%;
+}
 
-.experience-card {
-    border: 1px solid rgba(255,255,255,0.2);
+.aquarius-experience-experience-card {
+    border: 1px solid var(--white-color);
     padding: 15px;
     height: 100%;
     transition: 0.3s;
 }
 
-.img-box { border: 1px solid rgba(255,255,255,0.2); padding: 5px; }
-
-.card-title { font-size: 22px; font-family: 'Marcellus', serif; }
-
-.btn-reserve-orange {
-    background-color: #f15a24;
-    color: white;
-    border-radius: 0;
-    font-weight: bold;
-    padding: 10px 20px;
+.aquarius-experience-experience-card:hover {
+    border: 1px solid var(--white-color);
+    background-color: var(--background-color-blue);
+    opacity: 1;
+    padding: 15px;
+    height: 100%;
+    transition: 0.3s;
 }
 
-.luxury-yacht-box {
+.aquarius-experience-img-box {
+    padding-top: 15px;
+}
+
+.aquarius-experience-img-fluid {
+    width: 355px;
+    height: 275px;
+}
+
+.aquarius-experience-card-title {
+    color: var(--gray-color-light);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 27px;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+}
+
+.aquarius-experience-card-text {
+    color: var(--gray-color-light);
+    font-family: var(--font-josefin-sans);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    margin-top: -10px;
+}
+
+.aquarius-experience-experience-card:hover .aquarius-experience-card-title,
+.aquarius-experience-experience-card:hover .aquarius-experience-card-text {
+    color: var(--white-color);
+}
+
+.aquarius-experience-experience-card:hover .aquarius-experience-reserve-btn {
+    background-color: var(--orange-color);
+    border-color: var(--white-color);
+    color: var(--white-color);
+    transition: 0.3s;
+}
+
+.aquarius-experience-reserve-btn{
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    font-family: var(--font-jost);
+    font-weight: var(--font-weight-500);
+    font-style: var(--font-medium);
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 35px;
+    letter-spacing: 0%;
+    border-radius: 0;
+    background: transparent;
+    height: 65px;
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.aquarius-experience-view-all-btn {
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    font-family: var(--font-jost);
+    font-weight: var(--font-weight-700);
+    font-style: var(--font-bold);
+    font-size: 17px;
+    line-height: 17px;
+    letter-spacing: 0.84px;
+    border-radius: 0;
+    text-transform: uppercase;
+    background: transparent;
+    padding: 20px;
+}
+
+.aquarius-experience-view-all-btn:hover {
+    background-color: var(--background-color-blue);
+    transition: 0.3s;
+}
+
+.aquaris-miami-luxury-yacht-box {
     border: 1px solid rgba(255,255,255,0.2);
     background: rgba(0,0,0,0.2);
 }
 
-.feature-heading { font-size: 35px; font-family: 'Marcellus', serif; }
+.aquaris-miami-feature-heading {
+    font-size: 35px; font-family: 'Marcellus', serif;
+}
 
-.thumb-img {
+.aquaris-miami-thumb-img {
     border: 1px solid rgba(255,255,255,0.3);
     cursor: pointer;
 }
