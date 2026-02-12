@@ -2065,6 +2065,7 @@
 }
 
 
+/* Private Boating Lessons section */
 .private-boating-lessons-section {
     background-color: var(--background-color-light-blue);
     padding: 80px 0 0 0;
@@ -2134,8 +2135,7 @@
     margin-bottom: -100px;
 }
 
-.boatingdfdsfskafjklsad{
-    /* background-color: #27D045; */
+.boating-floating-in-sky{
     transform: translateY(90px);
 }
 
@@ -2145,9 +2145,9 @@
 }
 
 
-/* Section 2: Location */
+/* Rental Dock Location section */
 .rental-dock-location-section {
-    background: linear-gradient(rgba(0, 22, 38, 0.6), #001626), 
+    background: linear-gradient(30.06deg, rgba(0, 22, 38, 0.6), #001626), 
                 url('../images/Rental-dock-location-background.png') center/cover;
     padding: 150px 0 80px 0;
     text-align: center;
@@ -2286,3 +2286,227 @@
     height: 60px;
     transition: 0.3s;
 }
+
+@media (max-width: 425px) {
+    /* --- Section 1: Private Boating Lessons --- */
+    .private-boating-lessons-section {
+        padding: 60px 20px 0 20px;  
+        text-align: left;
+    }
+
+    .private-boating-lessons-small-badge {
+        padding: 3.33px 8.33px 8.33px 8.33px;
+        gap: 8.33px;
+        font-size: 12px;
+        line-height: 170%;
+        letter-spacing: 1.71px;
+    }
+
+    .private-boating-lessons-main-heading {
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 0px;
+        text-transform: capitalize;
+        width: 100%;
+    }
+
+    .private-boating-lessons-paragraph {
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        font-family: var(--font-dm-sand);
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-Regular);
+    }
+
+    .private-boating-lessons-btn-orange {
+        width: 60%;
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+        font-weight: var(--font-weight-700);
+        font-style: var(--font-bold);
+        font-family: var(--font-jost);
+        justify-content: center;
+    }
+
+    .private-boating-lessons-boat-img-container {
+        margin-bottom: -150px;
+        z-index: 20;
+    }
+
+    .boating-floating-in-sky {
+        transform: translateY(50px);
+    }
+
+    /* --- Section 2: Rental Dock Location --- */
+    .rental-dock-location-section {
+        padding: 180px 20px 60px 20px;
+        text-align: left;
+    }
+
+    .rental-dock-location-main-heading {
+        font-size: 32px;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .rental-dock-location-paragraph {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .rental-dock-location-map-container {
+        height: 300px;
+        margin: 30px 0;
+    }
+
+    .rental-slide {
+        min-width: 100%;
+        flex: 0 0 100%;
+        padding: 0;
+    }
+
+    .rental-slide img {
+        height: 200px;
+    }
+
+    .slider-btn {
+        display: none;
+    }
+
+    .rental-slider-wrapper {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .rental-slide {
+        scroll-snap-align: start;
+    }
+
+    .rental-dock-location-explore-btn {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+
+/* @media (max-width: 425px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    } */
+
+    /* --- Section 1: Private Boating Lessons --- */
+    /* .private-boating-lessons-section {
+        padding: 40px 0 0 0;
+        text-align: left;
+        min-height: auto;
+    }
+
+    .private-boating-lessons-main-heading {
+        font-size: 36px !important;
+        line-height: 1.1;
+        margin-bottom: 20px !important;
+    }
+
+    .private-boating-lessons-paragraph {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 30px !important;
+    }
+
+    .private-boating-lessons-btn-orange {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .private-boating-lessons-img-container {
+        margin-bottom: -120px !important;
+        padding: 0;
+        z-index: 99;
+    }
+
+    .boating-floating-in-sky {
+        transform: translateY(20px) !important;
+        width: 110%;
+        max-width: none;
+    } */
+
+    /* --- Section 2: Rental Dock Location --- */
+    /* .rental-dock-location-section {
+        padding: 160px 0 60px 0;
+        text-align: left;
+    }
+
+    .rental-dock-location-small-badge {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        text-align: left;
+        display: block;
+    }
+
+    .rental-dock-location-main-heading {
+        font-size: 32px !important;
+        line-height: 1.2;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .rental-dock-location-paragraph {
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .rental-dock-location-map-container {
+        height: 350px;
+        margin: 20px 0;
+    }
+
+    .rental-slider-wrapper {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        margin: 20px 0;
+    }
+
+    .rental-slider {
+        display: flex;
+    }
+
+    .rental-slide {
+        min-width: 90%;
+        flex: 0 0 90%;
+        padding: 5px;
+        scroll-snap-align: center;
+    }
+
+    .rental-slide img {
+        height: 220px;
+        border-width: 1px;
+    }
+
+    .slider-btn {
+        display: none !important;
+    }
+
+    .rental-dock-location-explore-btn {
+        width: 100% !important;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        font-size: 15px;
+    }
+} */
