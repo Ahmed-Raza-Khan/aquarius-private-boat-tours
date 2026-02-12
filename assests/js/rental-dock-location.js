@@ -1,14 +1,34 @@
-let items = document.querySelectorAll('#boatCarousel .carousel-item')
+document.addEventListener("DOMContentLoaded", function () {
 
-items.forEach((el) => {
-    const minPerSlide = 0
-    let next = el.nextElementSibling
-    for (var i=1; i<minPerSlide; i++) {
-        if (!next) {
-            next = items[0]
-        }
-        let cloneChild = next.cloneNode(true)
-        el.appendChild(cloneChild.children[0])
-        next = next.nextElementSibling
+    const slider = document.querySelector('.rental-slider');
+    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn');
+
+    if (!slider || !nextBtn || !prevBtn) {
+        console.log("Slider elements not found");
+        return;
     }
-})
+
+    nextBtn.addEventListener('click', function () {
+        slider.style.transition = "transform 0.6s ease";
+        slider.style.transform = "translateX(-25%)";
+
+        setTimeout(function () {
+            slider.appendChild(slider.firstElementChild);
+            slider.style.transition = "none";
+            slider.style.transform = "translateX(0)";
+        }, 600);
+    });
+
+    prevBtn.addEventListener('click', function () {
+        slider.style.transition = "none";
+        slider.prepend(slider.lastElementChild);
+        slider.style.transform = "translateX(-25%)";
+
+        setTimeout(function () {
+            slider.style.transition = "transform 0.6s ease";
+            slider.style.transform = "translateX(0)";
+        }, 10);
+    });
+
+});

@@ -2197,54 +2197,69 @@
     margin: 40px auto;
 }
 
-#boatCarousel {
-    position: relative;
+.rental-dock-location-gallery-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid var(--white-color);
 }
 
-.rental-dock-location-gallery-item img {
+.rental-slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.rental-slider {
+    display: flex;
+    transition: transform 0.6s ease;
+    width: 100%;
+}
+
+.rental-slide {
+    min-width: 25%;
+    padding: 10px;
+    flex: 0 0 25%;
+}
+
+.rental-slide img {
     width: 100%;
     height: 250px;
     object-fit: cover;
     border: 2px solid var(--white-color);
 }
 
-.rental-dock-location-carousel-control-prev,
-.rental-dock-location-carousel-control-next {
+.slider-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 5;
-    border-radius: 50%;
+    background: transparent;
     border: 1px solid var(--white-color);
-    opacity: 0.4;
+    opacity: 40%;
     width: 60px;
     height: 60px;
-    background: transparent;
+    border-radius: 50%;
     cursor: pointer;
+    z-index: 10;
 }
 
-.rental-dock-location-carousel-control-prev {
-    left: -75px;
-    transform: translateY(-50%) scaleX(-1);
-}
-
-.rental-dock-location-carousel-control-next {
-    right: -75px;
-}
-
-.rental-dock-location-carousel-control-next:hover,
-.rental-dock-location-carousel-control-prev:hover {
+.slider-btn:hover {
+    background: transparent;
     border: 1px solid var(--white-color);
     opacity: 1;
+    cursor: pointer;
+    z-index: 10;
 }
 
-.carousel-item {
-    transition: transform 0.6s ease-in-out;
+.prev-btn {
+    left: -30px;
+    transform: translateY(-50%) rotate(180deg);
 }
 
-.rental-dock-location-section {
-    overflow-x: hidden;
-} 
+.next-btn {
+    right: -30px;
+}
 
 .rental-dock-location-explore-btn {
     border: 1.2px solid var(--white-color);
