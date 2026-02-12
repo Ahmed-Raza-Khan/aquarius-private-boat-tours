@@ -2063,3 +2063,211 @@
         transform: translateY(330px);
     }
 }
+
+
+.private-boating-lessons-section {
+    background-color: var(--background-color-light-blue);
+    padding: 80px 0 0 0;
+    position: relative;
+    overflow: visible;
+    min-height: 60vh;
+}
+
+.private-boating-lessons-small-badge {
+    background-color: var(--gray-color-opacity-20);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 16px;
+    line-height: 170%;
+    letter-spacing: 2.06px;
+    display: inline-block;
+    padding: 5px 15px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.private-boating-lessons-main-heading{
+    color: var(--white-color);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 52px;
+    line-height: 110.1%;
+    letter-spacing: 1px;
+}
+
+.private-boating-lessons-paragraph{
+    color: var(--white-color);
+    font-family: var(--font-heebo);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+
+.private-boating-lessons-btn-orange {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    font-family: var(--font-jost);
+    font-weight: var(--font-weight-700);
+    font-style: var(--font-bold);
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.7px;
+    border-radius: 0;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    width: 220px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.private-boating-lessons-boat-img-container {
+    position: relative;
+    z-index: 10;
+    margin-bottom: -100px;
+}
+
+.boatingdfdsfskafjklsad{
+    /* background-color: #27D045; */
+    transform: translateY(90px);
+}
+
+.private-boating-lessons-img-container img {
+    width: 100%;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+}
+
+
+/* Section 2: Location */
+.rental-dock-location-section {
+    background: linear-gradient(rgba(0, 22, 38, 0.6), #001626), 
+                url('../images/Rental-dock-location-background.png') center/cover;
+    padding: 150px 0 80px 0;
+    text-align: center;
+}
+
+.rental-dock-location-small-badge {
+    background-color: var(--gray-color-opacity-20);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 18px;
+    line-height: 170%;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    padding: 5px 15px;
+    gap: 10px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.rental-dock-location-main-heading {
+    color: var(--white-color);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 52px;
+    line-height: 70px;
+    letter-spacing: 2.06px;
+    text-transform: capitalize;
+}
+
+.rental-dock-location-paragraph {
+    color: var(--white-color);
+    font-family: var(--font-josefin-sans);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.rental-dock-location-map-container {
+    max-width: 1200px;
+    height: 510px;
+    margin: 40px auto;
+}
+
+#boatCarousel {
+    position: relative;
+}
+
+.rental-dock-location-gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid var(--white-color);
+}
+
+.rental-dock-location-carousel-control-prev,
+.rental-dock-location-carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    border-radius: 50%;
+    border: 1px solid var(--white-color);
+    opacity: 0.4;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.rental-dock-location-carousel-control-prev {
+    left: -75px;
+    transform: translateY(-50%) scaleX(-1);
+}
+
+.rental-dock-location-carousel-control-next {
+    right: -75px;
+}
+
+.rental-dock-location-carousel-control-next:hover,
+.rental-dock-location-carousel-control-prev:hover {
+    border: 1px solid var(--white-color);
+    opacity: 1;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+.rental-dock-location-section {
+    overflow-x: hidden;
+} 
+
+.rental-dock-location-explore-btn {
+    border: 1.2px solid var(--white-color);
+    background: transparent;
+    padding: 20px 25px;
+    margin-top: 40px;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--white-color);
+    font-family: var(--font-jost);
+    font-weight: var(--font-weight-700);
+    font-style: var(--font-bold);
+    font-size: 17px;
+    line-height: 17px;
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
+    width: 400px;
+    height: 60px;
+}
+
+.rental-dock-location-explore-btn:hover {
+    background-color: var(--background-color-blue);
+    width: 400px;
+    height: 60px;
+    transition: 0.3s;
+}
