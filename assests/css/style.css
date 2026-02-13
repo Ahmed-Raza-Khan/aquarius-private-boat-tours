@@ -298,7 +298,7 @@
         /* background-size: cover; */
         overflow: hidden;
         object-fit: cover;
-        min-height: 300vh;
+        min-height: 110vh;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -338,13 +338,13 @@
         letter-spacing: 2.06px;
         color: var(--white-color);
         margin-left: 0 !important;
-        transform: translateY(-900px);
+        /* transform: translateY(0px); */
         text-align: left;
     }
     
     .hero-main-description {
         margin-left: 0 !important;
-        transform: translateY(-840px);
+        transform: translateY(30px);
         margin-top: 15px !important;
         margin-bottom: 25px !important;
         width: 350px;
@@ -359,7 +359,7 @@
     }
     
     .plan-tour-btn {
-        transform: translateY(-810px);
+        transform: translateY(30px);
         width: 195px;
         height: 50px;
         font-size: 13px;
@@ -2868,4 +2868,66 @@
 .reservation-section-btn-submit:hover {
     background-color: var(--orange-color);
     color: var(--white-color);
+}
+
+@media screen and (max-width: 425px) {
+    .reservation-section {
+        padding: 60px 20px;
+    }
+
+    .reservation-box {
+        padding: 20px 30px;
+        height: auto;
+        min-height: 600px;
+    }
+
+    .reservation-section-heading-big {
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: -1.5px;
+        text-align: center;
+    }
+
+    .reservation-section-custom-input {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 16px;
+        padding-left: 25px;
+    }
+        
+    .reservation-section .row > div {
+        width: 100%;
+    }
+
+    .reservation-section .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .reservation-section .col-md-3.position-relative {
+        width: 50% !important;
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        padding: 0 5px;
+    }
+
+    .reservation-section-btn-submit {
+        width: 70%;
+        margin: 20px auto 0 auto;
+        height: 60px;
+        font-family: var(--font-jost);
+        font-weight: var(--font-weight-500);
+        font-style: var(--font-medium);
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 0%;
+        display: block;
+    }
+
+    .reservation-section-input-icon {
+        top: 70%;
+        width: 15px;
+        height: 15px;
+        left: 10px;
+    }
 }
