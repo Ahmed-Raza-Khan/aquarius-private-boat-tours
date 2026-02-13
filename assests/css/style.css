@@ -2297,7 +2297,7 @@
 }
 
 @media (max-width: 425px) {
-    /* --- Section 1: Private Boating Lessons --- */
+/* Private Boating Lessons section */
     .private-boating-lessons-section {
         padding: 60px 20px 0 20px;  
         text-align: left;
@@ -2355,7 +2355,7 @@
         transform: translateY(50px);
     }
 
-    /* --- Section 2: Rental Dock Location --- */
+/* Rental Dock Location section */
     .rental-dock-location-section {
         padding: 180px 20px 60px 20px;
         text-align: left;
@@ -2453,119 +2453,6 @@
         height: auto;
     }
 }
-
-/* @media (max-width: 425px) {
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
-    } */
-
-    /* --- Section 1: Private Boating Lessons --- */
-    /* .private-boating-lessons-section {
-        padding: 40px 0 0 0;
-        text-align: left;
-        min-height: auto;
-    }
-
-    .private-boating-lessons-main-heading {
-        font-size: 36px !important;
-        line-height: 1.1;
-        margin-bottom: 20px !important;
-    }
-
-    .private-boating-lessons-paragraph {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 30px !important;
-    }
-
-    .private-boating-lessons-btn-orange {
-        width: 100%;
-        justify-content: space-between;
-        padding: 0 20px;
-    }
-
-    .private-boating-lessons-img-container {
-        margin-bottom: -120px !important;
-        padding: 0;
-        z-index: 99;
-    }
-
-    .boating-floating-in-sky {
-        transform: translateY(20px) !important;
-        width: 110%;
-        max-width: none;
-    } */
-
-    /* --- Section 2: Rental Dock Location --- */
-    /* .rental-dock-location-section {
-        padding: 160px 0 60px 0;
-        text-align: left;
-    }
-
-    .rental-dock-location-small-badge {
-        font-size: 14px;
-        letter-spacing: 1px;
-        line-height: 1.4;
-        text-align: left;
-        display: block;
-    }
-
-    .rental-dock-location-main-heading {
-        font-size: 32px !important;
-        line-height: 1.2;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-
-    .rental-dock-location-paragraph {
-        font-size: 16px;
-        text-align: left;
-        margin-bottom: 30px;
-    }
-
-    .rental-dock-location-map-container {
-        height: 350px;
-        margin: 20px 0;
-    }
-
-    .rental-slider-wrapper {
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        margin: 20px 0;
-    }
-
-    .rental-slider {
-        display: flex;
-    }
-
-    .rental-slide {
-        min-width: 90%;
-        flex: 0 0 90%;
-        padding: 5px;
-        scroll-snap-align: center;
-    }
-
-    .rental-slide img {
-        height: 220px;
-        border-width: 1px;
-    }
-
-    .slider-btn {
-        display: none !important;
-    }
-
-    .rental-dock-location-explore-btn {
-        width: 100% !important;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 20px;
-        font-size: 15px;
-    }
-} */
 
 
 /* Get to know Aquarius section */
@@ -2900,4 +2787,85 @@
     .row.mt-5.pt-5::-webkit-scrollbar {
         display: none;
     }
+}
+
+
+/* reservation section */
+.reservation-section {
+    min-height: 100vh;
+    background: url('../images/reserve-now-background.png');
+    background-size: cover;
+    background-position: top;
+}
+
+.reservation-box {
+    background: url('../images/reserve-now-foreground.png');
+    background-size: cover;
+    width: 100%;
+    max-width: 1000px;
+    height: 550px;
+    border-radius: 0px;
+    padding: 80px 120px 120px 120px;
+}
+
+.reservation-section-heading-big {
+    color: var(--white-color);
+    font-family: var(--font-outfit);
+    font-style: var(--font-Regular);
+    font-weight: var(--font-weight-400);
+    font-size: 50px;
+    line-height: 68px;
+    letter-spacing: -1.5px;
+}
+
+.reservation-section-custom-input {
+    background: transparent !important;
+    border: none;
+    border-bottom: 0.8px solid var(--gray-color-form-light);
+    color: var(--white-color) !important;
+    border-radius: 0;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.reservation-section-custom-input::placeholder {
+    color: var(--gray-color-form-light);
+    font-family: var(--font-outfit);
+    font-weight: var(--font-weight-300);
+    font-style: var(--font-light);
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-left: 10px;
+}
+
+.reservation-section-input-icon {
+    position: absolute;
+    left: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    width: 19px;
+    height: 20px;
+}
+
+.reservation-section-btn-submit {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0;
+    font-style: var(--font-medium);
+    font-weight: var(--font-weight-500);
+    font-family: var(--font-jost);
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    transition: 0.3s;
+    width: 250px;
+    height: 70px;
+}
+
+.reservation-section-btn-submit:hover {
+    background-color: var(--orange-color);
+    color: var(--white-color);
 }
