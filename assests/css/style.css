@@ -25,12 +25,15 @@
  --white-color: #FFFFFF;
  --gray-color-light: #999999;
  --gray-color-form-light: #757575;
+ --gray-color-form-till-dark: #99999929;
  --orange-color: #EF5A38;
  --gray-color-opacity-20: #FFFFFF33;
  --gray-color-opacity-10: #FFFFFF1A;
+ --gray-color-opacity-50: #FFFFFF80;
  --background-color-blue: #031B30;
  --background-color-dark-blue: #001120;
  --background-color-light-blue: #04253F;
+ --background-color-bluish-top: #091930;
  --white-color-more-lght-till-gray: #CFCFCF;
 }
 
@@ -2434,8 +2437,6 @@
     }
 }
 
-
-
 /* @media (max-width: 425px) {
     .container {
         padding-left: 20px;
@@ -2548,3 +2549,198 @@
         font-size: 15px;
     }
 } */
+
+
+/* Get to know Aquarius section */
+.about-section {
+    background-color: var(--background-color-dark-blue);
+    padding: 140px 0;
+}
+
+.about-section-badge-small-heading {
+    padding: 4px 10px 4px 10px;
+    background-color: var(--gray-color-opacity-20);
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    gap: 11px;
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 17px;
+    line-height: 170%;
+    letter-spacing: 2.09px;
+    text-transform: capitalize;
+}
+
+.about-section-badge-main-big-heading {
+    color: var(--white-color);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 51px;
+    line-height: 65px;
+    letter-spacing: 2.09px;
+    text-transform: capitalize;
+}
+
+.about-section-badge-main-all-para-1-2 {
+    color: var(--white-color);
+    font-family: var(--font-josefin-sans);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 21px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.about-section-about-us-button {
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    font-family: var(--font-jost);
+    font-weight: var(--font-weight-500);
+    font-style: var(--font-medium);
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    width: 220px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+
+.about-section-about-us-button:hover {
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    background-color: var(--background-color-bluish-top);
+    transition: 0.3s;
+}
+
+.image-stack {
+    position: relative;
+    height: 600px;
+}
+
+.img-back {
+    position: absolute;
+    right: -103px;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+    padding: 110px 70px 0 130px;
+    background-color: var(--background-color-light-blue);
+    transform: translateY(-165px) !important;
+}
+
+.about-section-badge-image-background-over {
+    width: 410px;
+    height: 390px;
+    background-size: cover;
+}
+
+.img-front {
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    width: 65%;
+    z-index: 2;
+    border-right: 9px solid var(--white-color);
+    border-top: 9px solid var(--white-color);
+}
+
+.about-section-badge-image-foreground-over {
+    width: 520px;
+    height: 400px;
+}
+
+.experience-box {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    background-color: var(--background-color-bluish-top);
+    color: var(--white-color);
+    border: 1px solid var(--gray-color-opacity-50);
+    z-index: 3;
+    min-width: 300px;
+    height: 150px;
+    padding: 24.6px;
+}
+
+.experience-box-heading {
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 66px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.experience-box-heading span{
+    color: var(--orange-color);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 66px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.experience-box-paragraph {
+    color: var(--white-color);
+    font-family: var(--font-inter);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0%;
+}
+
+.feature-card {
+    border: 1px solid var(--gray-color-form-till-dark);
+    width: 310px;
+    transition: 0.3s;
+}
+
+.feature-card-img-border {
+    border: 1px solid var(--white-color);
+    background-color: var(--gray-color-opacity-10);
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active-card {
+    background: linear-gradient(rgba(11, 22, 36, 0.9), rgba(11, 22, 36, 0.1)), 
+                url('../images/About-Us-3.jpg');
+    background-size: cover;
+    border: 1px solid var(--white-color);
+}
+
+.margin-top-top {
+    margin-top: 43%;
+}
+
+.feature-card h5 {
+    color: var(--white-color);
+    font-family: var(--font-marcellus);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: var(--white-color-more-lght-till-gray);
+    font-family: var(--font-inter);
+    font-weight: var(--font-weight-400);
+    font-style: var(--font-regular);
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0%;
+}
