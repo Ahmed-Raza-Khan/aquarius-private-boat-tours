@@ -2344,55 +2344,93 @@
     .rental-dock-location-section {
         padding: 180px 20px 60px 20px;
         text-align: left;
+        height: 290vh;
     }
 
+    .rental-dock-location-small-badge {
+        border: 0.83px solid var(--white-color);
+        padding: 3.33px 8.33px 3.33px 8.33px;
+        background-color: var(--gray-color-opacity-20);
+        font-family: var(--font-marcellus);
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        gap: 8.33px;
+        font-size: 12px;
+        line-height: 170%;
+        letter-spacing: 2px;
+        transform: translateY(-90px);
+    }
+    
     .rental-dock-location-main-heading {
-        font-size: 32px;
-        line-height: 1.2;
+        font-family: var(--font-marcellus);
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        font-size: 33px;
+        line-height: 35px;
+        letter-spacing: 0px;
+        text-transform: capitalize;
         text-align: left;
+        transform: translateY(-80px);
     }
-
+    
     .rental-dock-location-paragraph {
-        font-size: 16px;
+        font-family: var(--font-dm-sand);
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0%;
         text-align: left;
+        transform: translateY(-70px);
     }
-
+    
     .rental-dock-location-map-container {
-        height: 300px;
+        height: 350px;
+        width: 360px;
         margin: 30px 0;
+        transform: translateY(-70px);
     }
-
+    
     .rental-slide {
+        transform: translateY(80px);
         min-width: 100%;
         flex: 0 0 100%;
         padding: 0;
     }
-
+    
     .rental-slide img {
-        height: 200px;
+        height: 400px;
     }
-
+    
     .slider-btn {
         display: none;
     }
-
+    
     .rental-slider-wrapper {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
     }
-
+    
     .rental-slide {
         scroll-snap-align: start;
     }
-
+    
     .rental-dock-location-explore-btn {
+        font-family: var(--font-jost);
+        font-weight: var(--font-weight-700);
+        font-style: var(--font-bold);
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 1px;
         width: 100%;
         height: auto;
-        padding: 15px;
+        padding: 20px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        transform: translateY(10px);
     }
 }
 
