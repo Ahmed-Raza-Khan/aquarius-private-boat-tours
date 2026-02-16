@@ -3130,9 +3130,6 @@
     transform: rotate(-90.06deg);
 }
 
-/* ===============================
-   MOBILE FOOTER (425px)
-=================================*/
 @media (max-width: 425px) {
 
     .main-footer {
@@ -3140,7 +3137,6 @@
         text-align: left;
     }
 
-    /* Make columns full width */
     .main-footer .col-lg-4 {
         width: 100%;
         max-width: 100%;
@@ -3148,81 +3144,133 @@
         margin-bottom: 35px;
     }
 
-    /* Logo */
     .footer-logo {
-        width: 180px;
-        height: auto;
+        width: 230px;
+        height: 95px;
     }
 
-    /* Paragraph */
     .logo-paragraph-footer {
         font-size: 14px;
-        line-height: 150%;
+        font-family: var(--font-josefin-sans);
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        color: var(--white-color-more-lght-till-gray);
+        letter-spacing: 0%;
+        line-height: 160%;
         padding-right: 0 !important;
     }
 
-    /* Contact text smaller */
-    .contact-label,
-    .contact-info p {
+    .contact-label {
+        font-weight: var(--font-weight-600);
+        font-style: var(--font-semibold);
+        font-family: var(--font-josefin-sans);
+        line-height: 150%;
+        letter-spacing: 0%;
         font-size: 14px;
     }
 
-    /* Map full width */
+    .contact-info p {
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        font-family: var(--font-josefin-sans);
+        line-height: 150%;
+        letter-spacing: 0%;
+        font-size: 14px;
+    }
+
     .map-container iframe {
         width: 100%;
-        height: 160px;
+        height: 200px;
     }
 
-    /* Headings */
     .footer-heading,
     .footer-heading-12 {
-        font-size: 14px;
+        color: var(--orange-color);
+        font-weight: var(--font-weight-700);
+        font-style: var(--font-bold);
+        font-family: var(--font-josefin-sans);
+        line-height: 150%;
+        letter-spacing: 0%;
+        font-size: 16px;
         margin-bottom: 15px;
+        text-transform: uppercase;
     }
 
-    /* Links */
     .footer-links li {
-        margin-bottom: 10px;
+        margin-bottom: 18px;
     }
 
     .footer-links a {
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        font-family: var(--font-inter);
+        color: var(--white-color);
+        line-height: 150%;
+        letter-spacing: 0%;
         font-size: 14px;
     }
 
-    /* Newsletter */
     .newsletter-section {
         margin: 30px 0;
-        text-align: left;
     }
 
-    .newsletter-section h2 {
+    .newsletter-section h2 
+    {
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        font-family: var(--font-marcellus);
+        color: var(--white-color);
+        line-height: 130%;
+        letter-spacing: 0%;
         font-size: 24px;
         margin-right: 0;
         margin-bottom: 15px;
+        text-align: start;
     }
 
-    /* Stack input + button */
     .newsletter-form {
         flex-direction: column;
         gap: 10px;
     }
 
     .newsletter-form .form-control {
-        width: 100%;
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        font-family: var(--font-inter);
+        color: var(--white-color-more-lght-till-gray);
+        line-height: 160%;
+        letter-spacing: 0%;
         font-size: 14px;
+        width: 100%;
     }
 
     .btn-subscribe {
         width: 100%;
+        font-weight: var(--font-weight-500);
+        font-style: var(--font-medium);
+        font-family: var(--font-inter);
+        color: var(--white-color);
+        line-height: 130%;
+        letter-spacing: 0%;
         font-size: 14px;
+        text-transform: capitalize;
         padding: 12px;
     }
 
-    /* Footer bottom */
     .footer-bottom {
         padding-top: 25px;
         padding-bottom: 25px;
         text-align: center;
+    }
+
+    .footer-bottom-paragraph-4344 {
+        font-weight: var(--font-weight-400);
+        font-style: var(--font-regular);
+        font-family: var(--font-inter);
+        color: var(--white-color);
+        line-height: 160%;
+        letter-spacing: 0%;
+        font-size: 14px;
     }
 
     .footer-bottom .row {
@@ -3232,9 +3280,9 @@
 
     .bottom-links {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
-        gap: 10px;
+        gap: 20px;
     }
 
     .bottom-links a {
@@ -3243,7 +3291,13 @@
     }
 
     .back-to-top {
-        margin-top: 10px;
-        justify-content: center;
+        margin-top: 40px;
+        justify-content: end;
+        transform: translateX(90px);
+    }
+
+    .up-arrow-box {
+        width: 30px;
+        height: 30px;
     }
 }
