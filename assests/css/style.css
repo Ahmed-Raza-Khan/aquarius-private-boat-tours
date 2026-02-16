@@ -11,7 +11,7 @@
  --font-inter: 'Inter';
  --font-outfit: 'Outfit';
  --font-times-new-roman: 'Times New Roman';
- --font-regular: 'Regular';
+ --font-regular: 'regular';
  --font-bold: 'Bold';
  --font-medium: 'Medium';
  --font-light: 'Light';
@@ -27,8 +27,10 @@
  --gray-color-form-light: #757575;
  --gray-color-form-till-dark: #99999929;
  --orange-color: #EF5A38;
- --gray-color-opacity-20: #FFFFFF33;
  --gray-color-opacity-10: #FFFFFF1A;
+ --gray-color-opacity-16: #FFFFFF29;
+ --gray-color-opacity-20: #FFFFFF33;
+ --gray-color-opacity-40: #FFFCFC66;
  --gray-color-opacity-50: #FFFFFF80;
  --background-color-blue: #031B30;
  --background-color-dark-blue: #001120;
@@ -1848,7 +1850,7 @@
         width: 100%;
         font-family: var(--font-marcellus);
         font-weight: var(--font-weight-400);
-        font-style: var(--font-Regular);
+        font-style: var(--font-regular);
         font-size: 13px;
         line-height: 160%;
         letter-spacing: 1.71px;
@@ -1863,7 +1865,7 @@
     .aquaris-miami-feature-heading {
         font-family: var(--font-marcellus);
         font-weight: var(--font-weight-400);
-        font-style: var(--font-Regular);
+        font-style: var(--font-regular);
         font-size: 34px;
         line-height: 39px;
         letter-spacing: 0%;
@@ -1873,7 +1875,7 @@
     .aquaris-miami-feature-desc {
         font-family: var(--font-dm-sand);
         font-weight: var(--font-weight-400);
-        font-style: var(--font-Regular);
+        font-style: var(--font-regular);
         font-size: 15px;
         line-height: 24px;
         letter-spacing: 0%;
@@ -2325,7 +2327,7 @@
         letter-spacing: 0%;
         font-family: var(--font-dm-sand);
         font-weight: var(--font-weight-400);
-        font-style: var(--font-Regular);
+        font-style: var(--font-regular);
     }
 
     .private-boating-lessons-btn-orange {
@@ -2679,7 +2681,7 @@
     .about-section-badge-main-all-para-1-2 {
         font-family: var(--font-josefin-sans);
         font-weight: var(--font-weight-400);
-        font-style: var(--font-Regular);
+        font-style: var(--font-regular);
         font-size: 14px;
         line-height: 150%;
         letter-spacing: 0%;
@@ -2770,7 +2772,7 @@
         font-size: 23px;
         font-family: var(--font-marcellus);
         font-weight: var(--font-weight-400);
-        font-style: var(--font-Regular);
+        font-style: var(--font-regular);
         line-height: 120%;
         letter-spacing: 0%;
     }
@@ -2779,7 +2781,7 @@
         font-size: 14px;
         font-family: var(--font-inter);
         font-weight: var(--font-weight-400);
-        font-style: var(--font-Regular);
+        font-style: var(--font-regular);
         line-height: 150%;
         letter-spacing: 0%;
     }
@@ -2811,7 +2813,7 @@
 .reservation-section-heading-big {
     color: var(--white-color);
     font-family: var(--font-outfit);
-    font-style: var(--font-Regular);
+    font-style: var(--font-regular);
     font-weight: var(--font-weight-400);
     font-size: 50px;
     line-height: 68px;
@@ -2943,75 +2945,187 @@
     font-size: 0.9rem;
 }
 
-.footer-logo { max-width: 150px; margin-bottom: 20px; }
-
-.footer-heading {
-    font-size: 0.8rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.footer-logo {
     margin-bottom: 20px;
-    color: white;
 }
 
-.footer-links { list-style: none; padding: 0; }
-.footer-links li { margin-bottom: 10px; }
-.footer-links a { color: var(--text-muted); text-decoration: none; transition: 0.3s; }
-.footer-links a:hover { color: white; }
+.logo-paragraph-footer {
+    color: var(--white-color);
+    font-style: var(--font-regular);
+    font-weight: var(--font-weight-400);
+    font-family: var(--font-josefin-sans);
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    margin-bottom: 30px;
+}
 
-.contact-info p { margin-bottom: 5px; color: var(--text-muted); }
-.contact-label { color: white; font-weight: bold; display: block; margin-top: 15px; }
+.contact-label {
+    color: var(--white-color);
+    font-style: var(--font-semibold);
+    font-weight: var(--font-weight-600);
+    font-family: var(--font-josefin-sans);
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    display: block;
+    margin-top: 15px;
+}
+
+.contact-info p {
+    color: var(--white-color);
+    font-style: var(--font-regular);
+    font-weight: var(--font-weight-400);
+    font-family: var(--font-josefin-sans);
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    margin-bottom: 15px;
+}
 
 .map-container iframe {
-    width: 100%;
-    height: 150px;
     border-radius: 4px;
     margin-top: 20px;
 }
 
-.newsletter-section { margin: 50px 0; }
-.newsletter-section h2 { font-size: 2rem; margin-bottom: 20px; }
+.footer-heading-12 {
+    color: var(--white-color-more-lght-till-gray);
+    font-style: var(--font-bold);
+    font-weight: var(--font-weight-700);
+    font-family: var(--font-josefin-sans);
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 6%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: var(--white-color);
+    font-style: var(--font-regular);
+    font-weight: var(--font-weight-300);
+    font-family: var(--font-inter);
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-heading {
+    color: var(--white-color-more-lght-till-gray);
+    font-style: var(--font-semibold);
+    font-weight: var(--font-weight-600);
+    font-family: var(--font-josefin-sans);
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 6%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.newsletter-section {
+    margin: 50px 0;
+}
+
+.newsletter-section h2 {
+    color: var(--white-color);
+    font-style: var(--font-regular);
+    font-weight: var(--font-weight-400);
+    font-family: var(--font-marcellus);
+    font-size: 45px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+    margin-right: 330px;
+}
 
 .newsletter-form .form-control {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid #333;
-    color: white;
-    padding: 12px;
+    background-color: var(--gray-color-opacity-40);
+    border: 1px solid var(--white-color);
+    color: var(--white-color-more-lght-till-gray);
+    padding: 15px;
+    gap: 12px;
+    border-radius: 0;
 }
 
 .btn-subscribe {
-    background-color: var(--accent-orange);
-    color: white;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    font-style: var(--font-medium);
+    font-weight: var(--font-weight-500);
+    font-family: var(--font-inter);
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    padding: 14px 25px 14px 25px;
     border: none;
-    padding: 0 30px;
-    font-weight: bold;
+    border-radius: 0;
+    gap: 27px;
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 20px;
+    border-top: 1.11px solid var(--gray-color-opacity-16);
+    padding-top: 36px;
+    padding-bottom: 36px;
     margin-top: 40px;
-    font-size: 0.8rem;
-    color: var(--text-muted);
+}
+
+.footer-bottom-paragraph-4344 {
+    color: var(--white-color);
+    font-style: var(--font-regular);
+    font-weight: var(--font-weight-400);
+    font-family: var(--font-inter);
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
 }
 
 .bottom-links a {
-    color: var(--text-muted);
+    color: var(--white-color);
+    font-style: var(--font-regular);
+    font-weight: var(--font-weight-400);
+    font-family: var(--font-inter);
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0%;
     text-decoration: none;
     margin-left: 15px;
 }
 
 .back-to-top {
-    color: white;
-    text-decoration: none;
-    border: 1px solid #333;
-    padding: 5px 10px;
+    color: var(--white-color);
+    border: 1px solid var(--gray-color-opacity-16);
+    padding: 5px 7px 5px 5px;
     display: inline-flex;
     align-items: center;
+    text-decoration: none;
+    font-style: var(--font-regular);
+    font-weight: var(--font-weight-400);
+    font-family: var(--font-inter);
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    gap: 7px;
 }
 
 .up-arrow-box {
-    background: var(--accent-orange);
-    padding: 2px 6px;
+    background: var(--orange-color);
+    padding: 5px 5px 5px 5px;
     margin-right: 8px;
+}
+
+.arrow-up {
+    transform: rotate(-90.06deg);
 }
