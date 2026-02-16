@@ -3129,3 +3129,121 @@
 .arrow-up {
     transform: rotate(-90.06deg);
 }
+
+/* ===============================
+   MOBILE FOOTER (425px)
+=================================*/
+@media (max-width: 425px) {
+
+    .main-footer {
+        padding: 40px 20px 20px;
+        text-align: left;
+    }
+
+    /* Make columns full width */
+    .main-footer .col-lg-4 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 35px;
+    }
+
+    /* Logo */
+    .footer-logo {
+        width: 180px;
+        height: auto;
+    }
+
+    /* Paragraph */
+    .logo-paragraph-footer {
+        font-size: 14px;
+        line-height: 150%;
+        padding-right: 0 !important;
+    }
+
+    /* Contact text smaller */
+    .contact-label,
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    /* Map full width */
+    .map-container iframe {
+        width: 100%;
+        height: 160px;
+    }
+
+    /* Headings */
+    .footer-heading,
+    .footer-heading-12 {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    /* Links */
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    /* Newsletter */
+    .newsletter-section {
+        margin: 30px 0;
+        text-align: left;
+    }
+
+    .newsletter-section h2 {
+        font-size: 24px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    /* Stack input + button */
+    .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-form .form-control {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .btn-subscribe {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    /* Footer bottom */
+    .footer-bottom {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        text-align: center;
+    }
+
+    .footer-bottom .row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .bottom-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .bottom-links a {
+        margin-left: 0;
+        font-size: 13px;
+    }
+
+    .back-to-top {
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
